@@ -12,6 +12,9 @@ import android.widget.TextView;
 public class FinalResult extends Activity {
     final Context context = this;
     TextView result;
+    int a = 10;
+    int b = 20;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +23,9 @@ public class FinalResult extends Activity {
        // finalresult = (TextView)findViewById(R.id.final_result);
         result.setText("Your Score is :"+String.valueOf(Cnst.rightanswer));
 
+        int c = a + b;
+        System.out.println(c);
+        
         if(Cnst.rightanswer == 0 || Cnst.rightanswer == 1 || Cnst.rightanswer == 2){
             //finalresult.setText("Your Score is too Low");
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);;
